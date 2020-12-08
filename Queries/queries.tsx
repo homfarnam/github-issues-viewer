@@ -7,6 +7,7 @@ export const SEARCH_FOR_REPOS = gql`
       edges {
         node {
           ... on Repository {
+            id
             name
             owner {
               login

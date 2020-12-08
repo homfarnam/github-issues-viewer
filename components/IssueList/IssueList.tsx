@@ -75,7 +75,11 @@ const IssueList: React.FC<IssueListProps> = ({ repoName, repoOwner }) => {
                   alt="pic"
                   className="w-10 h-10 justify-center items-center mt-1"
                 />
-                <Issue title={issue.title} bodyHTML={issue.bodyHTML} />
+                <Issue
+                  title={issue.title}
+                  bodyHTML={issue.bodyHTML}
+                  author={issue.author}
+                />
               </div>
             </>
           )

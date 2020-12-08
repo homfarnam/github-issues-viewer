@@ -9,14 +9,10 @@ import {
 interface IssueProps {
   title: string
   bodyHTML: any
-  author: { login: String; avatarUrl: String } | undefined
+  author: { login: string; avatarUrl: string }
 }
 
-const Issue: React.FC<IssueProps> = ({
-  title,
-  bodyHTML,
-  author: { login, avatarUrl },
-}) => {
+const Issue: React.FC<IssueProps> = ({ title, bodyHTML, author }) => {
   const [dialogOpened, setDialogOpened] = useState(false)
   return (
     <>
@@ -31,12 +27,12 @@ const Issue: React.FC<IssueProps> = ({
         <DialogContent>
           <div className="flex flex-row justify-start items-center">
             <img
-              src={avatarUrl}
+              src={author.avatarUrl}
               alt="pic"
               className="w-10 h-10 justify-center items-center mt-1"
             />
             <h3 className="font-sans text-xl mb-5 pt-6 ml-5">
-              Author: {login}
+              Author: {author.login}
             </h3>
           </div>
 

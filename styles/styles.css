@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+}
+
+.appBar {}
+
+.header {
+    color: black;
+}
+
+.centered {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.toolbar {
+    position: relative;
+    min-height: 60;
+}
+
+.main {
+    padding: 24px 16px 24px;
+}
+
+.toolbarContent {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 32px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.searchInput {
+    width: 150px;
+    height: 25px;
+    transition: all 1s;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.searchInput:focus {
+    width: 180px;
+}
+
+.searchIcon {
+    color: white !important;
+}
+
+.grow {
+    flex: 1;
+}
+
+.root .loading {
+    pointer-events: none;
+}
+
+.title {
+    font-weight: 500;
+}
+
+.starIcon {
+    height: 18px;
+    width: 18px;
+    margin-right: 4px;
+}
+
+.listItemIcon {
+    margin-right: 0;
+}
+
+.content {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.rootLayout {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.repoContent {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.repoTitle {
+    color: black;
+    font-size: 16px;
+}

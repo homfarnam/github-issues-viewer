@@ -11,7 +11,7 @@ function createApolloClient() {
       uri: "https://api.github.com/graphql",
       headers: {
         // authorization: "Bearer 40df9572cd27f11672eeb1f87bea192b397cc3fa",
-        authorization: "Bearer 322ca2b2595c0ea020aa1b472c04b0c50a5eb666",
+        authorization: "Bearer 45c29dc794c526353fefbc1ccb416b66dec577bb",
       },
     }),
     cache: new InMemoryCache(),

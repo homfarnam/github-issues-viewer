@@ -10,7 +10,8 @@ function createApolloClient() {
     link: new HttpLink({
       uri: "https://api.github.com/graphql",
       headers: {
-        authorization: `bearer ${process.env.REACT_APP_GITHUB_KEY}`,
+        authorization: `bearer ${process.env.NEXT_PUBLIC_REACT_APP_GITHUB_TOKEN}`,
+        // authorization: `bearer 188b1009275cfde6771c8acc6833237004bacb1e`,
       },
     }),
     cache: new InMemoryCache(),

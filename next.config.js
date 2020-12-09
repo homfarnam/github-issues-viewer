@@ -2,6 +2,7 @@ const withCss = require("@zeit/next-css")
 const withPurgeCss = require("next-purgecss")
 const withSass = require("@zeit/next-sass")
 const withTM = require("next-transpile-modules")
+
 const withBabelMinify = require("next-babel-minify")({
   comments: false,
 })
@@ -13,6 +14,12 @@ module.exports = withBabelMinify({
 })
 
 module.exports = withCss(
+  {
+    env: {
+      NEXT_PUBLIC_REACT_APP_GITHUB_TOKEN:
+        process.env.NEXT_PUBLIC_REACT_APP_GITHUB_TOKEN,
+    },
+  },
   withPurgeCss({
     purgeCssPaths: [
       "pages/**/*",

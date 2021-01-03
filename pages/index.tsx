@@ -19,6 +19,7 @@ const App = () => {
     <>
       <Head>
         <title>GraphQL Github Client</title>
+        <meta name="Description" content="GraphQL Github Issues Explorer" />
       </Head>
       <Container maxWidth={"sm"}>
         <div className="mt-10 mb-5">
